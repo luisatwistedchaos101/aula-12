@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      display: grid;
+      grid-template-areas:
+        "header header header"
+        "aside main main"
+        "footer footer footer";
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 250px 1fr;
+      height: 100vh;
+    }
+    header {
+      grid-area: header;
+      background-color: blue;
+      height: 100px;
+    }
+    aside {
+      grid-area: aside;
+      background: red;
+    }
+    main {
+      grid-area: main;
+      background: green;
+    }
+    footer {
+      grid-area: footer;
+      background: yellow;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <header></header>
+  <aside></aside>
+  <main>
+    <section class="filters"></section>
+    <section class="videos__container"></section>
+  </main>
+  <footer></footer>
+</body>
+</html>
