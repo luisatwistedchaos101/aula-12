@@ -4,39 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Youtube</title>
-  <link rel="stylesheet" href="/css/style.css">
   <link rel="shortcut icon" href="/images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
   <header>
-    <div>
-      <div class="menu__button hover__background">
+    <nav>
+      <button class="menu__button hover__background" aria-label="Menu">
         <img src="/images/menu.svg" alt="Menu">
-      </div>
-      <img class="logo" src="/images/logo.svg" alt="Youtube">
-    </div>
+      </button>
+      <a href="https://youtube.com.br">
+        <img class="logo" src="/images/logo.svg" alt="Youtube">
+      </a>
+    </nav>
 
-    <div class="search__container">
+    <section class="search__container">
       <div class="search__container__input">
-        <input type="text" placeholder="Pesquisar">
-        <div class="search">
+        <input type="text" placeholder="Pesquisar" aria-label="Pesquisar">
+        <button class="search" aria-label="Buscar">
           <img class="" src="/images/lupa.svg" alt="Lupa">
-        </div>
+        </button>
       </div>
-      <div class="mic__icon">
+      <button class="mic__icon" aria-label="Microfone">
         <img src="/images/microfone.svg" alt="Microfone">
-      </div>
-    </div>
+      </button>
+    </section>
 
-    <div class="profile">
-      <div class="hover__background">
+    <section class="profile">
+      <button class="hover__background" aria-label="Câmera">
         <img class="header__icons" src="/images/camera-video.svg" alt="Câmera">
-      </div>
-      <div class="hover__background">
+      </button>
+      <button class="hover__background" aria-label="Notificações">
         <img class="header__icons" src="/images/sino.svg" alt="Sino">
-      </div>
-      <img class="perfil__photo" src="/images/perfil.jpg" alt="Perfil">
-    </div>
+      </button>
+      <button aria-label="Perfil">
+        <img class="perfil__photo" src="/images/perfil.jpg" alt="Perfil">
+      </button>
+    </section>
   </header>
 
   <aside></aside>
