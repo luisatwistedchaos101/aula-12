@@ -1,20 +1,10 @@
+/* Resetando estilização do navegador */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-button {
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
 
 body {
   display: grid;
@@ -27,18 +17,10 @@ body {
   height: 100vh;
 }
 
+/* Display GRID */
+
 header {
   grid-area: header;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 8px 24px;
-}
-
-header section, nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 aside {
@@ -55,6 +37,41 @@ footer {
   grid-area: footer;
   background: yellow;
   height: 100px;
+}
+
+/* Estilizando header */
+
+header {
+  padding: 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header section, 
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button img, 
+.header__icons {
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
@@ -101,20 +118,9 @@ footer {
   border-radius: 0 31px 31px 0;
 }
 
-
-.header__icons {
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.perfil__photo {
-  object-fit: cover;
-  height: 36px;
-  width: 36px; 
-  border-radius: 18px;
-  margin-left: 6px;
+.search:hover {
+  background-color: #D9D9D9;
+  cursor: pointer;
 }
 
 .mic__icon {
@@ -136,6 +142,14 @@ footer {
   margin-right: 8px;
 }
 
+.perfil__photo {
+  object-fit: cover;
+  height: 36px;
+  width: 36px;
+  border-radius: 18px;
+  margin-left: 6px;
+}
+
 .hover__background {
   height: 40px;
   width: 40px;
@@ -147,12 +161,6 @@ footer {
 
 .hover__background:hover {
   background-color: #F0F0F0;
-  cursor: pointer;
-}
-
-.search:hover {
-  cursor: pointer;
-  background-color: #D9D9D9;
 }
 
 .mic__icon,
